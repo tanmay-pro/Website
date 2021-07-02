@@ -1,7 +1,7 @@
 @keyframes bgchange{
-	0% {background-image: url('../img/away.jpg');}
-	50% {background-image: url('../img/skylight.jpg');}
-	100% {background-image: url('../img/away.jpg');}
+	0% {background-image: url('../img/allineed.jpg');}
+	50% {background-image: url('../img/lost-dream.jpg');}
+	100% {background-image: url('../img/allineed.jpg');}
 }
 
 body{
