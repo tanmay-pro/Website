@@ -76,7 +76,7 @@ making the font size large*/
 	transform: translateY(-50%);
 	font-size: 1.3em;
 	animation-name: exp-appear;
-	animation-duration: 5s;
+	animation-duration: 3s;
 }
 
 #display1{
