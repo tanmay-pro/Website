@@ -37,7 +37,7 @@ making the font size large*/
 /*This modifies the label tag style*/
 
 label {
-	font-family: cursive, monospace;
+	font-family: 'Dancing Script',cursive, monospace;
 	padding-right: 3em;	
 	display: block;
 	font-weight: bold;
@@ -89,7 +89,7 @@ td{
 	border-width: 0.0625em;
 	border-color: white;
 	padding: 0.5em;
-	font-family: monospace;
+	font-family: 'Dancing Script',monospace;
 	font-weight: bold;
 	font-size: 1.3em;
 	color: black;

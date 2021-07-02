@@ -112,10 +112,10 @@ making the font size large*/
 	padding: 1%;
 	position: absolute;
 	left: 40%;
-	top: 28%;
+	top: 21%;
 	color: #39ff14;
-	font-size: 2.6em;
-	font-family: monospace;
+	font-size: 5em;
+	font-family: 'Amatic SC',monospace;
 	font-weight: bold;
 	animation-name: fade-in2;
 	animation-duration: 5s;
@@ -127,10 +127,10 @@ making the font size large*/
 	padding: 1%;
 	position: absolute;
 	left: 40%; 
-	top: 48%;
+	top: 43%;
 	color: #39ff14;
-	font-size: 2.6em;
-	font-family: monospace;
+	font-size: 5em;
+	font-family:'Amatic SC', monospace;
 	font-weight: bold;
 	animation-name: fade-in;
 	animation-duration: 5s;
@@ -197,7 +197,7 @@ making the font size large*/
 /* Style the back side */
 .flip-box-back {
 	background-image: url('../img/budapest.jpg');
-	color: white;
+	color: black;
 	transform: rotateY(180deg);
 	position: absolute;
 	width: 100%;
