@@ -53,7 +53,7 @@ $(document).ready(function(){
 // }
 
 var i = 0;
-var txt = 'I am a highly motivated fresher, encouraged to expand and develop my knowledge on the fundamentals of computer science. I wish to contribute to worthwile projects and learn from them. Enjoy visiting my website :)';
+var txt = 'I am a highly motivated fresher, encouraged to expand and develop my knowledge on the fundamentals of computer science. I wish to contribute to worthwile projects and learn from them.';
 var speed = 100; /* The speed/duration of the effect in milliseconds */
 
 window.onload = function typeWriter1() {
