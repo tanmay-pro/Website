@@ -38,7 +38,7 @@ making the font size large*/
 	border-color: black; 
 	border-width: 0.15em;
 	background-color: transparent;
-	font-family: monospace;
+	font-family: 'Vollkorn',monospace;
 	font-size: 1.3em;
 	/*backdrop-filter: blur(2px);*/
 }
