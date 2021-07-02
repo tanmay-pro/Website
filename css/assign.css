@@ -1,0 +1,97 @@
+/* To create a new background image for Assignment Page*/
+@keyframes bgchange{
+	0% {background-image: url('../img/skylight.jpg');}
+	50% {background-image: url('../img/away.jpg');}
+	100% {background-image: url('../img/skylight.jpg');}
+}
+
+body{
+	/*	background-image: url('../img/eclipse.jpg');*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	animation-name: bgchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	/*overflow: scroll;*/
+}
+
+/*The following class is used for adding space to elements in navigation bar and 
+making the font size large*/
+.extra-space{
+	display: block;
+	padding-right: 10%; 
+	font-size: 1.3em;
+}
+
+/*The following class is used to arrange the form */
+
+.container {
+	margin: 3em;
+	position: absolute;
+	height: auto;
+	display: block;
+}
+
+/*This modifies the label tag style*/
+
+label {
+	font-family: cursive, monospace;
+	padding-right: 3em;	
+	display: block;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #39FF14;
+}
+
+.form_group {
+	padding: 0.5em;
+	display: block;
+}
+
+/*This styles the submit button*/
+
+.submit-button {
+	color: black;
+	position: absolute;
+	left: 20%;
+	top: 35%;
+}
+
+/*The following css code is used to style the table used for displaying*/
+
+table {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translateX(-30%);
+	transform: translateY(-50%);	
+	width: 50%;
+	overflow-wrap: break-word;
+	box-shadow: 0 0 1rem 0 black;
+}
+
+th {
+	text-align: center;
+	border-width: 0.0625em;
+	border-color: white;
+	padding: 0.5em;
+	font-family: cursive, monospace;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: white;
+	background-color: black;
+}
+
+td{
+	text-align: center;
+	border-width: 0.0625em;
+	border-color: white;
+	padding: 0.5em;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: black;
+	background-color: white;
+}

@@ -1,0 +1,205 @@
+/*To Alternate between background Images*/
+
+@keyframes bgchange{
+	0% {background-image: url('../img/imhere.jpg');}
+	50% {background-image: url('../img/horizon.jpg');}
+	100% {background-image: url('../img/imhere.jpg');}
+}
+
+/*Specifies the style of background images*/
+
+body{
+	/*	background-image: url('../img/eclipse.jpg');*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	animation-name: bgchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	/*overflow: scroll;*/
+}
+
+/*The following class is used for adding space to elements in navigation bar and 
+making the font size large*/
+.extra-space{
+	display: block;
+	padding-right: 10%; 
+	font-size: 1.3em;
+}
+
+/*This animation makes text appear from the left side of screen*/
+
+@keyframes cona{
+
+	from {opacity: 0%; left: 0;}
+	to{opacity:100%; left: 20%;
+		visibility: visible;} 
+}
+
+/*This animation makes text appear from the right side of screen*/
+
+@keyframes conb{
+
+	from {opacity: 0%; right: 0;}
+	to{opacity:100%; right:20%;
+		visibility: visible;} 
+}
+
+/*This class is used for specifying the arrangement of content of first box*/
+
+.con1{
+/*	left: 40%;*/
+	width: 20%;
+	overflow-wrap: break-word;
+	max-height: 30%;
+	transform: translateX(-20%);
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	position: absolute;
+	top: 10%;
+	padding: 0.3125em;
+	margin: 0.3125em;
+	visibility: hidden;
+	font-family: monospace;
+	animation-name: cona;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/*This class is used for specifying the arrangement of content of second box*/
+
+.con2{
+/*	left: 40%;*/
+	visibility: hidden;
+	width: 20%;
+	color: white;
+	overflow-wrap: break-word;
+	max-height: 30%;
+	transform: translateX(-20%);
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	position: absolute;
+	top: 25%;
+	padding: 0.325em;
+	margin: 0.325em;
+	font-family: monospace;
+	animation-name: conb;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/*This class is used for specifying the arrangement of content of third box*/
+
+.con3{
+/*	left: 40%;*/
+	visibility: hidden;
+	width: 20%;
+	overflow-wrap: break-word;
+	max-height: 30%;
+	transform: translateX(-20%);
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	position: absolute;
+	top: 45%;
+	padding: 0.3125em;
+	margin: 0.3125em;
+	font-family: monospace;
+	animation-name: cona;
+	animation-duration: 5s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/*This class is used for specifying the arrangement of content of fourth box*/
+
+.con4{
+/*	left: 40%;*/
+	visibility: hidden;
+	width: 20%;
+	color: white;
+	overflow-wrap: break-word;
+	max-height: 30%;
+	transform: translateX(-20%);
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	position: absolute;
+	top: 55%;
+	padding: 0.3125em;
+	margin: 0.3125em;
+	font-family: monospace;
+	animation-name: conb;
+	animation-duration: 5s;
+	animation-delay:6s;
+	animation-fill-mode: forwards;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/*This class is used for specifying the arrangement of content of fifth box*/
+
+.con5{
+/*	left: 40%;*/
+	visibility: hidden;
+	width: 20%;
+	overflow-wrap: break-word;
+	max-height: 30%;
+	transform: translateX(-20%);
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	position: absolute;
+	top: 75%;
+	padding: 0.3125em;
+	margin: 0.3125em;
+	font-family: monospace;
+	animation-name: cona;
+	animation-duration: 5s;
+	animation-delay: 8s;
+	animation-fill-mode: forwards;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/*This class is used for specifying the arrangement of content of sixth box*/
+
+.con6{
+/*	left: 40%;*/
+	visibility: hidden;
+	width: 20%;
+	color: white;
+	overflow-wrap: break-word;
+	max-height: 30%;
+	transform: translateX(-20%);
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	position: absolute;
+	top: 85%;
+	padding: 0.3125em;
+	margin: 0.3125em;
+	font-family: monospace;
+	animation-name: conb;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+	animation-delay: 10s;
+	font-size: 1.1em;
+	font-weight: bold;
+}

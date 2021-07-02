@@ -1,0 +1,98 @@
+@keyframes bgchange{
+	0% {background-image: url('../img/away.jpg');}
+	50% {background-image: url('../img/skylight.jpg');}
+	100% {background-image: url('../img/away.jpg');}
+}
+
+body{
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	animation-name: bgchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	/*overflow: scroll;*/
+}
+
+/*The following class is used for adding space to elements in navigation bar and 
+making the font size large*/
+.extra-space{
+	display: block;
+	padding-right: 10%; 
+	font-size: 1.3em;
+}
+
+.adjust-buttons{
+	left: 10%;
+	top: 30%;
+	position: absolute;
+	width: 20%;
+	height: 30%;
+
+}
+
+.adjust-buttons-content{
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	border-color: black; 
+	border-width: 0.15em;
+	background-color: transparent;
+	font-family: monospace;
+	font-size: 1.3em;
+	/*backdrop-filter: blur(2px);*/
+}
+
+.adjust-buttons-content:hover{
+	background-color: black;
+	border-color: gray;
+}
+
+.adjust-buttons-content:focus{
+	background-color: white;
+	color: black;
+	border-color: gray;
+	outline-color: gray;
+}
+
+@keyframes exp-appear{
+	from{ opacity: 0; }
+	to{ opacity: 1;}
+} 
+.content{
+	top: 50%;
+	left: 40%;
+	position: absolute;
+	color: white;
+	max-width: 30%;
+	padding: 0.5em;
+	border-radius: 0.5em;
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(0.125em);
+	overflow-wrap: break-word;
+	box-shadow: 0 0 1rem 0 black;
+	overflow: auto;
+	font-family: monospace;
+	transform: translateY(-50%);
+	font-size: 1.3em;
+	animation-name: exp-appear;
+	animation-duration: 5s;
+}
+
+#display1{
+	display: none;
+}
+
+#display2{
+	display: none;
+}
+
+#display3{
+	display: none;
+}
+#display4{
+	display: none;
+}
+#display5{
+	display: none;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<!-- Required meta tags for Bootstrap to Work-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Meta tags have been added -->
+	<title>
+		Skills
+	</title>
+	<!-- 	Adding CSS Bootstrap-->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"> 
+	<!-- 	CSS Bootstrap Stylesheet added -->
+	<!-- 	Adding My CSS File-->
+	<link rel="stylesheet" type="text/css" href="../css/assign.css">
+	<!-- My CSS file has been added -->
+	<!-- Adding jQuery -->
+	<script src="../js/jquery.js"></script>
+	<!-- jQuery has been added -->
+	<!-- 	Adding my javascript file -->
+	<script src="../js/script.js"></script>
+	<!-- 	My javascript file has been added -->
+</head>
+<body>
+	<!-- 	Adding navigation bar with the help of CSS -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<!-- 					Color me is an empty class which has been added to facilitate the change of color in navigation bar --> 
+					<li class="nav-item extra-space">
+						<a class="nav-link color-me" href="index.html">Home</a>
+					</li>
+					<li class="nav-item extra-space">
+						<a class="nav-link color-me" href="achievements.html">Achievements</a>
+					</li>
+					<li class="nav-item extra-space">
+						<a class="nav-link color-me" href="https://github.com/tanmay-pro">Projects</a>
+					</li>
+					<li class="nav-item extra-space">
+						<a class="nav-link color-me" href="education.html">Experience</a>
+					</li>
+					<li class="nav-item extra-space">
+						<a class="nav-link color-me" href="assignment.html">Skills</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- 	Navigation bar has been added -->
+	<form name="form1">
+		<div class="container">
+			<div class="form_group">
+				<label>Name:<br><input type="text" id="name" value required placeholder="Enter Your name"></label>	
+			</div>
+			<div class="form_group">
+				<label>Skill:<br><input type="text" id="skill_value" value required placeholder="Enter my skill"></label>
+			</div>
+			<div class="form_group">
+				<label>Proficiency:</label>
+				<select id="level" name="Proficiency">Select
+					<option value="Noob">Noob</option>
+					<option value="Average">Average</option>
+					<option value="Pro">Pro</option>
+					<option value="Dhasu">Dhasu</option>
+				</select>
+			</div>
+		</div>		
+		<button type="button" class="btn btn-primary submit-button" onclick="insert()" value="Submit">Submit</button>
+	</form>
+	<!-- The below table uses merged cells -->
+	<div id="table">
+		<table>
+			<tbody><tr><td colspan="3">SKILLS TABLE</td></tr>
+				<tr>
+					<th>NAME</th>
+					<th>SKILL</th>
+					<th>LEVEL</th>
+				</tr>
+			</tbody></table>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	</body>
+	</html>

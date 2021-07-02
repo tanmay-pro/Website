@@ -1,0 +1,207 @@
+/*To Specify a background Image*/
+
+@keyframes bgchange{
+	0% {background-image: url('../img/eclipse.jpg');}
+	50% {background-image: url('../img/traffic.jpg');}
+	100% {background-image: url('../img/eclipse.jpg');}
+}
+
+body{
+	/*	background-image: url('../img/eclipse.jpg');*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	animation-name: bgchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	/*overflow: scroll;*/
+}
+
+/*The following class is used for adding space to elements in navigation bar and 
+making the font size large*/
+.extra-space{
+	display: block;
+	padding-right: 10%; 
+	font-size: 1.3em;
+}
+
+@keyframes fade {
+	0% {
+		opacity:1;
+	}
+	45% {
+		opacity:1;
+	}
+	55% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+/*This Class is used for maintaining my image on the homepage*/
+.mypic_size{
+	width: 18%;
+	height: 41%;
+	margin-left: 3%;
+	top: 20%;
+	border-radius: 0.5em;	
+	position: absolute;
+	box-shadow: 0 0 1rem 0 black;
+	cursor: pointer;
+}
+
+@keyframes colorchange{
+	0% {color: #f5f5dc;}
+	50% {color: #78dec7}
+	100% {color: #f5f5dc;}
+}
+
+
+/*This is the design of the content on the home page (About me)*/
+#get-text-main-page{
+	width: 18%;
+	height: 41%;
+	overflow-wrap: break-word;
+	overflow: auto;
+	padding: 0.5%;
+	position: absolute;
+	right: 3%; 
+	top: 20%;
+	color: #f5f5dc;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 1.3em;
+	font-variant: small-caps;
+	animation-name: colorchange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+
+/*This id is used to get the opaqueness effect on box 1*/
+#opaque{
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	position: absolute;
+	right: 3%;
+	top: 20%;
+	width: 18%;
+	height: 41%;
+}
+
+@keyframes fade-in{
+	0% {opacity: 0%; transform: rotate(0deg);}
+	100% {opacity: 100%; transform: rotate(360deg);}
+	/*	100% { opacity: 0%; transform: rotate(0deg);}*/
+}
+
+@keyframes fade-in2{
+	0% {opacity: 0%; transform: rotate(360deg);}
+	100% {opacity: 100%; transform: rotate(0deg);}
+/*	100% { opacity: 0%; transform: rotate(360deg);}
+*/
+}
+
+#get-display-name{
+	overflow-wrap: break-word;
+	overflow: auto;
+	padding: 1%;
+	position: absolute;
+	left: 40%;
+	top: 28%;
+	color: #39ff14;
+	font-size: 2.6em;
+	font-family: monospace;
+	font-weight: bold;
+	animation-name: fade-in2;
+	animation-duration: 5s;
+}
+
+.get-display-name2{
+	overflow-wrap: break-word;
+	overflow: auto;
+	padding: 1%;
+	position: absolute;
+	left: 40%; 
+	top: 48%;
+	color: #39ff14;
+	font-size: 2.6em;
+	font-family: monospace;
+	font-weight: bold;
+	animation-name: fade-in;
+	animation-duration: 5s;
+}
+
+/*This code has been written for generating the flip box which shows my current education*/
+.flip-box {
+	background-color: transparent;
+	width: 24%;
+	height: 25%;
+	position: absolute;
+	left: 20%;
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	perspective: 67.5em;
+	overflow-wrap: break-word;
+/*	overflow: scroll;*/
+}
+
+.flip-box2 {
+	background-color: transparent;
+	width: 24%;
+	height: 25%;
+	position: absolute;
+	left: 60%;
+	backdrop-filter: blur(0.125em);
+	border-radius: 0.5em;
+	box-shadow: 0 0 1rem 0 black;
+	perspective: 67.5em;
+	overflow-wrap: break-word;
+/*	overflow: scroll;*/
+}
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-box2:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+
+/* Style the front side */
+.flip-box-front {
+	background-image: url('../img/budapest.jpg');
+	color: black;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-box-back {
+	background-image: url('../img/budapest.jpg');
+	color: white;
+	transform: rotateY(180deg);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
