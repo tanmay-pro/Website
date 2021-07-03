@@ -5,13 +5,17 @@ $(document).ready(function() {
 	});
 });
 
-// The below jQuesry function is used to change colour of elements of navigation bar when the mouse enters
+// The below jQuery function is used to change colour of elements of navigation bar when the mouse enters
 $(document).ready(function() {
 	$(".color-me").mouseenter(function () {
 		$(this).css({"color": "#39FF14"});
 	});
 });
 
+// The below jQuery function is used to fix the navbar on top while scrolling
+$(document).ready(function(){
+	$(".navbar").css({"position": "fixed", "top" : "0", "right" : "0", "z-index" : "1030", "left" : "0"});
+})
 
 // The below jQuery function removes underline which came on mouse entering the components   
 $(document).ready(function() {
